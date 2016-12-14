@@ -25,7 +25,9 @@ SECRET_KEY = '*)kmxicd+t&-(dfb^%23j49+fi33*t$5(2=392$#8m88$8e_nn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0'
+]
 
 
 # Application definition
@@ -55,7 +57,7 @@ ROOT_URLCONF = 'firstdjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['firstdjango/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
